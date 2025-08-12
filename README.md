@@ -1,4 +1,5 @@
-🚀 C# Eğitim Kampı Projeleri
+#🚀 C# Eğitim Kampı Projeleri
+
 Bu repo, Murat Yücedağ’ın C# Eğitim Kampı sürecinde geliştirdiğim ilk 9 projeyi içeriyor. Her proje, C# dilini adım adım öğrenmeme, temel kavramları pekiştirmeme ve pratik yaparak ilerlememe yardımcı oldu. Aşağıda her projede neler yaptığımı ve neler öğrendiğimi kendi cümlelerimle paylaşıyorum.
 
 ✨ Proje 1 – Merhaba Dünya
