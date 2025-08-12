@@ -13,45 +13,45 @@ namespace _09_DatabaseProject
         static void Main(string[] args)
         {
             //Ado.net
-            Console.WriteLine();
-            Console.WriteLine("****** C# Veri Tabanlı Ürün-Kategori Bilgi Sistemi  *****");
-            Console.WriteLine();
-            Console.WriteLine();
+            //Console.WriteLine();
+            //Console.WriteLine("****** C# Veri Tabanlı Ürün-Kategori Bilgi Sistemi  *****");
+            //Console.WriteLine();
+            //Console.WriteLine();
 
-            string tableNumber;
+            //string tableNumber;
 
-            Console.WriteLine("----------------------------------------------");
-            Console.WriteLine("1-Kategoriler");
-            Console.WriteLine("2-Ürünler");
-            Console.WriteLine("3-Siparişler");
-            Console.WriteLine("4-Çıkış Yapa");
-            Console.Write("Lütfen Getirmek İstediğiniz Tablo Numarası Giriniz: ");
-            tableNumber =Console.ReadLine();
-            Console.WriteLine("----------------------------------------------");
+            //Console.WriteLine("----------------------------------------------");
+            //Console.WriteLine("1-Kategoriler");
+            //Console.WriteLine("2-Ürünler");
+            //Console.WriteLine("3-Siparişler");
+            //Console.WriteLine("4-Çıkış Yapa");
+            //Console.Write("Lütfen Getirmek İstediğiniz Tablo Numarası Giriniz: ");
+            //tableNumber =Console.ReadLine();
+            //Console.WriteLine("----------------------------------------------");
 
 
-            SqlConnection connection = new SqlConnection("Data Source =(localdb)\\MSSQLLocalDB;initial Catalog =CsharpEgitimDb;integrated Security =true");
-            connection.Open();
-            SqlCommand command = new SqlCommand("Select * From TblCategory",connection);
-            SqlDataAdapter adapter = new SqlDataAdapter(command);
-            DataTable dataTable = new DataTable();
-            adapter.Fill(dataTable);
-            connection.Close();
+            //SqlConnection connection = new SqlConnection("Data Source =(localdb)\\MSSQLLocalDB;initial Catalog =CsharpEgitimDb;integrated Security =true");
+            //connection.Open();
+            //SqlCommand command = new SqlCommand("Select * From TblCategory",connection);
+            //SqlDataAdapter adapter = new SqlDataAdapter(command);
+            //DataTable dataTable = new DataTable();
+            //adapter.Fill(dataTable);
+            //connection.Close();
 
-            foreach (DataRow row in dataTable.Rows)
-            {
-                foreach(var item in row.ItemArray)
-                {
-                    Console.Write("-");
-                    Console.Write(item.ToString()); 
-                }
+            //foreach (DataRow row in dataTable.Rows)
+            //{
+            //    foreach(var item in row.ItemArray)
+            //    {
+            //        Console.Write("-");
+            //        Console.Write(item.ToString()); 
+            //    }
                 
-                Console.WriteLine();
-            }
+            //    Console.WriteLine();
+            //}
 
 
 
-            Console.Read();
+            //Console.Read();
         }
     }
 }
